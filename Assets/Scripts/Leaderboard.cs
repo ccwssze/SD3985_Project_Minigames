@@ -59,7 +59,7 @@ public class Leaderboard : MonoBehaviour
             winnerName = nameTexts[0].text;
             winnerNameText.text = winnerName;
 
-            //StartCoroutine(changeScene("Lobby"));
+            StartCoroutine(changeScene("Lobby"));
         }
     }
     IEnumerator changeScene(string scene)

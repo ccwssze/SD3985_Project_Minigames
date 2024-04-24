@@ -8,7 +8,7 @@ public class Timer : MonoBehaviour
 {
     public double timerIncrementValue;
     double startTime;
-    [SerializeField] double timer = 90;
+    public double timer = 90;
     ExitGames.Client.Photon.Hashtable CustomValue;
 
     public Text timerText;
