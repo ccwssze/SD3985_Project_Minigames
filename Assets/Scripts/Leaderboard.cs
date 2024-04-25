@@ -59,7 +59,7 @@ public class Leaderboard : MonoBehaviour
             i++;
         }
 
-        if (Timer.timerIsRunning == false || JumpingPlayerController.endGame == true)
+        if (Timer.timerIsRunning == false)
         {
             showWinner.SetActive(true);
             winnerName = nameTexts[0].text;

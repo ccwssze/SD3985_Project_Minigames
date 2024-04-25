@@ -60,12 +60,10 @@
     <Compile Include="Assets\Scripts\Timer.cs" />
     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Runtime\Attributes\PropertyOrderAttribute.cs" />
     <Compile Include="Assets\Cainos\Pixel Art Top Down - Basic\Script\TopDownCharacterController.cs" />
-    <Compile Include="Assets\Scripts\ShowPlayerName.cs" />
     <Compile Include="Assets\Cainos\Pixel Art Platformer - Village Props\Script\MovingPlatform.cs" />
     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Runtime\Attributes\HorizontalLineAttribute.cs" />
     <Compile Include="Assets\Photon\PhotonLibs\WebSocket\WebSocket.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextButtonTransition.cs" />
-    <Compile Include="Assets\Scripts\CreateAndJoinRooms.cs" />
     <Compile Include="Assets\Photon\PhotonLibs\WebSocket\SocketWebTcp.cs" />
     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Runtime\Attributes\GUIColorAttribute.cs" />
     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Runtime\Attributes\HelpBoxIfAttribute.cs" />
@@ -81,8 +79,8 @@
     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Runtime\Attributes\HideIfAttribute.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\NamePickGui.cs" />
     <Compile Include="Assets\Cainos\Pixel Art Platformer - Village Props\Script\Elevator.cs" />
+    <Compile Include="Assets\Scripts\ArrivalPoint.cs" />
     <Compile Include="Assets\Scripts\TimedSpawn.cs" />
-    <Compile Include="Assets\Scripts\ConnectToServer.cs" />
     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Runtime\Attributes\LabelTextAttribute.cs" />
     <Compile Include="Assets\Cainos\Pixel Art Top Down - Basic\Script\PropsAltar.cs" />
     <Compile Include="Assets\Scripts\JumpingPlayerController.cs" />
@@ -129,8 +127,15 @@
     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Runtime\Attributes\FoldoutGroupAttribute.cs" />
     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Runtime\Attributes\IndentAttribute.cs" />
     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Runtime\Attributes\DisableLucidEditorAttribute.cs" />
-    <Compile Include="Assets\Scripts\CameraFollow.cs" />
-    <Compile Include="Assets\Scripts\ArrivalPoint.cs" />
+    <Compile Include="Assets\Scripts\updated\Timer_updated.cs" />
+    <Compile Include="Assets\Scripts\updated\TimedSpawn_updated.cs" />
+    <Compile Include="Assets\Scripts\updated\PlayerController_updated.cs" />
+    <Compile Include="Assets\Scripts\updated\Collectible_updated.cs" />
+    <Compile Include="Assets\Scripts\updated\Leaderboard_updated.cs" />
+    <Compile Include="Assets\Scripts\updated\RespawnPlayers_updated.cs" />
+    <Compile Include="Assets\Scripts\updated\JumpingPlayerController_updated.cs" />
+    <Compile Include="Assets\Scripts\updated\CameraFollow.cs" />
+    <Compile Include="Assets\Scripts\updated\Minigame2_Leaderboard_updated.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Cainos\Third Party\Lucid Editor\License.txt" />

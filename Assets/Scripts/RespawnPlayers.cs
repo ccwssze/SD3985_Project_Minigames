@@ -15,9 +15,11 @@ public class RespawnPlayers : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        JumpingPlayerController_updated player = other.GetComponent<JumpingPlayerController_updated>();
         if (other.tag == "Player")
         {
             other.transform.position = respawnPoint.transform.position;
+            player.SetScore(0);
         }
     }
 }

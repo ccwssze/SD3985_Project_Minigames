@@ -15,7 +15,7 @@ public class TimedSpawn : MonoBehaviour
     {
         InvokeRepeating("SpawnObject", spawnTime, spawnDelay);
     }
-    public void SpawnObject()
+    void FixedUpdate()
     {
         MeshCollider c = quad.GetComponent<MeshCollider>();
         float screenX, screenY;
