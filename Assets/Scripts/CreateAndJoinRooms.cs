@@ -24,7 +24,7 @@ public class CreateAndJoinRooms : MonoBehaviourPunCallbacks
 
     public override void OnJoinedRoom()
     {
-        PhotonNetwork.LoadLevel("Minigame1");
+        PhotonNetwork.LoadLevel("Minigame2");
     }
 
     public void PlayerName()

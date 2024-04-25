@@ -25,9 +25,15 @@ public class Leaderboard : MonoBehaviour
 
     public float waitTime = 5f;
 
+    public string nextScene;
+
     void Start()
     {
         InvokeRepeating(nameof(Refresh), 1f, refreshRate);
+        foreach (var player in PhotonNetwork.PlayerList)
+        {
+            player.SetScore(0);
+        }
     }
 
     public void Refresh()
@@ -53,13 +59,13 @@ public class Leaderboard : MonoBehaviour
             i++;
         }
 
-        if (Timer.timerIsRunning == false)
+        if (Timer.timerIsRunning == false || JumpingPlayerController.endGame == true)
         {
             showWinner.SetActive(true);
             winnerName = nameTexts[0].text;
             winnerNameText.text = winnerName;
 
-            StartCoroutine(changeScene("Lobby"));
+            StartCoroutine(changeScene(nextScene));
         }
     }
     IEnumerator changeScene(string scene)

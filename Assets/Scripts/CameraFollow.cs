@@ -2,30 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
+using Photon.Realtime;
+
 public class CameraFollow : MonoBehaviour
 {
+    public float CameraSpeed;
+    PhotonView view;
+    public GameObject player;
 
-    public Transform target;
-
-    public float smoothSpeed = 10f;
-    public Vector3 offset;
 
     void Start()
     {
-        GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
-        foreach (GameObject player in players)
-        {
-            if (PhotonView.Get(player).IsMine)
-            {
-                this.target = player.transform;
-                break;
-            }
-        }
+        view = GetComponent<PhotonView>();
     }
 
-    private void LateUpdate()
+    // Update is called once per frame
+    void FixedUpdate()
     {
-        Vector3 targetPos = target.position + offset;
-        transform.position = Vector3.Lerp(transform.position, targetPos, smoothSpeed * Time.deltaTime);
+        player = GameObject.FindWithTag("Player");
+        if (player != null) 
+        {
+            transform.position =  new Vector3(player.transform.position.x, 0f, -10f);
+        }
     }
 }

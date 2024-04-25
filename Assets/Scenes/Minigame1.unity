@@ -1633,6 +1633,7 @@ MonoBehaviour:
   showWinner: {fileID: 83429842}
   winnerNameText: {fileID: 975842898}
   waitTime: 5
+  nextScene: Minigame2
 --- !u!1001 &935702696
 PrefabInstance:
   m_ObjectHideFlags: 0
