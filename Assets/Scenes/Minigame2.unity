@@ -1858,7 +1858,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af41255d4b74a394dbeb83c92a073ffc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noOfPlayers: 4
+  noOfPlayers: 3
   playerList:
   - {fileID: 1685818199}
   - {fileID: 1536775436}

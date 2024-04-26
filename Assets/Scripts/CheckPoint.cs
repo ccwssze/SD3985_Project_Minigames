@@ -9,7 +9,7 @@ public class CheckPoint : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            JumpingPlayerController_updated player = other.GetComponent<JumpingPlayerController_updated>();
+            Minigame2_PlayerController player = other.GetComponent<Minigame2_PlayerController>();
             player.AddScore(5);
         }
     }
