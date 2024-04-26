@@ -109,7 +109,6 @@
     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\TitleHeaderAttributeProcessor.cs" />
     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\EnableIfAttributeProcessor.cs" />
     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\PropertyGroupProcessor.cs" />
-    <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\Editor\ChatEditor.cs" />
     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\InspectorProperty\InspectorButton.cs" />
     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\GUIColorAttributeProcessor.cs" />
     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\FoldoutGroupAttributeProcessor.cs" />
@@ -356,12 +355,6 @@
     </Reference>
     <Reference Include="Unity.Plastic.Antlr3.Runtime">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.17.0\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="websocket-sharp">
-      <HintPath>Assets\Photon\PhotonLibs\WebSocket\websocket-sharp.dll</HintPath>
-    </Reference>
-    <Reference Include="Photon3Unity3D">
-      <HintPath>Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.dll</HintPath>
     </Reference>
     <Reference Include="unityplastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.17.0\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
@@ -821,46 +814,6 @@
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{6A32D01B-1873-3EAF-69F9-E4D0B6FB8971}</Project>
       <Name>Assembly-CSharp</Name>
-    </ProjectReference>
-    <ProjectReference Include="PhotonChat.csproj">
-      <Project>{1B6B29B2-D468-D639-9C95-49AA7A3F05E8}</Project>
-      <Name>PhotonChat</Name>
-    </ProjectReference>
-    <ProjectReference Include="PhotonUnityNetworking.Editor.csproj">
-      <Project>{0DA61794-194C-B74B-1104-C0051C1BFC9A}</Project>
-      <Name>PhotonUnityNetworking.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.csproj">
-      <Project>{F7AF48B1-AE7A-3300-103E-63CFBB73F6A0}</Project>
-      <Name>PhotonUnityNetworking.Utilities.PhotonPlayer.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="PunDemos.DemoHubEditor.csproj">
-      <Project>{14AC9E88-B707-83A1-44F1-D5DF7B39C0A6}</Project>
-      <Name>PunDemos.DemoHubEditor</Name>
-    </ProjectReference>
-    <ProjectReference Include="PhotonRealtime.csproj">
-      <Project>{3A6EB3C5-C5BD-F2D1-9212-6BBD70300635}</Project>
-      <Name>PhotonRealtime</Name>
-    </ProjectReference>
-    <ProjectReference Include="PhotonUnityNetworking.Utilities.csproj">
-      <Project>{996798C0-9191-9975-8568-C71823CCC7EA}</Project>
-      <Name>PhotonUnityNetworking.Utilities</Name>
-    </ProjectReference>
-    <ProjectReference Include="PhotonUnityNetworking.csproj">
-      <Project>{AFC0C039-1A0D-425B-82DB-1D6F9B79F236}</Project>
-      <Name>PhotonUnityNetworking</Name>
-    </ProjectReference>
-    <ProjectReference Include="PhotonUnityNetworking.Demos.csproj">
-      <Project>{C94633CC-2B92-F07A-CF15-6B6FB8734DC8}</Project>
-      <Name>PhotonUnityNetworking.Demos</Name>
-    </ProjectReference>
-    <ProjectReference Include="PunDemos.DemoSlotcarEditor.csproj">
-      <Project>{F8821B8D-60E5-687D-2A4A-04396DFFB9B8}</Project>
-      <Name>PunDemos.DemoSlotcarEditor</Name>
-    </ProjectReference>
-    <ProjectReference Include="PhotonUnityNetworking.Utilities.Culling.Editor.csproj">
-      <Project>{57467F17-4331-943A-A88A-2626DB8338E1}</Project>
-      <Name>PhotonUnityNetworking.Utilities.Culling.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
